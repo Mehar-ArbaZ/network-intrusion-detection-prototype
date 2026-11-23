@@ -1,0 +1,23 @@
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Raw datasets and archives
+data/raw/*
+!data/raw/.gitkeep
+*.zip
+*.tar.gz
+
+# Jupyter & Python caches
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Environment & IDE files
+.env
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
