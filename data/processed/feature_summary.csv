@@ -1,0 +1,42 @@
+column,dtype,nunique_train,nunique_test,min_train,max_train,median_train,skew_train,sample_values
+duration,int64,2981,624,0.0,42908.0,0.0,11.88,0..42908
+protocol_type,str,3,3,-,-,-,-,"tcp, udp, icmp"
+service,str,70,64,-,-,-,-,"http, private, domain_u"
+flag,str,11,11,-,-,-,-,"SF, S0, REJ"
+src_bytes,int64,3341,1149,0.0,1379963888.0,44.0,190.67,0..1379963888
+dst_bytes,int64,9326,3650,0.0,1309937401.0,0.0,290.05,0..1309937401
+land,int64,2,2,0.0,1.0,0.0,70.97,0..1
+wrong_fragment,int64,3,3,0.0,3.0,0.0,11.46,0..3
+urgent,int64,4,4,0.0,3.0,0.0,149.91,0..3
+hot,int64,28,16,0.0,77.0,0.0,12.59,0..77
+num_failed_logins,int64,6,5,0.0,5.0,0.0,53.76,0..5
+logged_in,int64,2,2,0.0,1.0,0.0,0.43,0..1
+num_compromised,int64,88,23,0.0,7479.0,0.0,250.11,0..7479
+root_shell,int64,2,2,0.0,1.0,0.0,27.25,0..1
+su_attempted,int64,3,3,0.0,2.0,0.0,42.44,0..2
+num_root,int64,82,20,0.0,7468.0,0.0,236.91,0..7468
+num_file_creations,int64,35,9,0.0,43.0,0.0,55.67,0..43
+num_shells,int64,3,4,0.0,2.0,0.0,59.59,0..2
+num_access_files,int64,10,5,0.0,9.0,0.0,45.55,0..9
+num_outbound_cmds,int64,1,1,0.0,0.0,0.0,0.0,0..0
+is_host_login,int64,2,2,0.0,1.0,0.0,354.93,0..1
+is_guest_login,int64,2,2,0.0,1.0,0.0,10.16,0..1
+count,int64,512,495,0.0,511.0,14.0,1.51,0..511
+srv_count,int64,509,457,0.0,511.0,8.0,4.69,0..511
+serror_rate,float64,89,88,0.0,1.0,0.0,0.96,0.0..1.0
+srv_serror_rate,float64,86,82,0.0,1.0,0.0,0.97,0.0..1.0
+rerror_rate,float64,82,90,0.0,1.0,0.0,2.33,0.0..1.0
+srv_rerror_rate,float64,62,93,0.0,1.0,0.0,2.33,0.0..1.0
+same_srv_rate,float64,101,75,0.0,1.0,1.0,-0.57,0.0..1.0
+diff_srv_rate,float64,95,99,0.0,1.0,0.0,4.38,0.0..1.0
+srv_diff_host_rate,float64,60,84,0.0,1.0,0.0,2.86,0.0..1.0
+dst_host_count,int64,256,256,0.0,255.0,255.0,-0.83,0..255
+dst_host_srv_count,int64,256,256,0.0,255.0,63.0,0.28,0..255
+dst_host_same_srv_rate,float64,101,101,0.0,1.0,0.51,-0.01,0.0..1.0
+dst_host_diff_srv_rate,float64,101,101,0.0,1.0,0.02,3.61,0.0..1.0
+dst_host_same_src_port_rate,float64,101,101,0.0,1.0,0.0,2.09,0.0..1.0
+dst_host_srv_diff_host_rate,float64,75,58,0.0,1.0,0.0,5.55,0.0..1.0
+dst_host_serror_rate,float64,101,99,0.0,1.0,0.0,0.97,0.0..1.0
+dst_host_srv_serror_rate,float64,100,101,0.0,1.0,0.0,0.99,0.0..1.0
+dst_host_rerror_rate,float64,101,101,0.0,1.0,0.0,2.35,0.0..1.0
+dst_host_srv_rerror_rate,float64,101,100,0.0,1.0,0.0,2.34,0.0..1.0
