@@ -1,0 +1,5 @@
+id,model,features,val_accuracy,val_precision,val_recall,val_f1,val_macro_f1,val_false_alarm_rate,val_roc_auc
+E1,LogisticRegression(max_iter=1000),All 41 features,0.9719,0.9764,0.9629,0.9696,0.9717,0.0203,0.9964
+E2,LogisticRegression(max_iter=1000),Pruned 33 features (drop constant & |r|>0.90),0.9699,0.9746,0.9604,0.9674,0.9697,0.0218,0.996
+E3,RandomForestClassifier(n_estimators=100),All 41 features,0.999,0.9995,0.9983,0.9989,0.999,0.0004,1.0
+E4,"RandomForest GridSearchCV (max_depth=20, n_estimators=200)",All 41 features,0.999,0.9995,0.9983,0.9989,0.999,0.0004,1.0
