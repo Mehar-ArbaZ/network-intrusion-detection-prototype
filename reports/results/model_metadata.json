@@ -1,0 +1,115 @@
+{
+  "selected_experiment": "E4",
+  "selected_model_name": "RandomForest GridSearchCV (max_depth=20, n_estimators=200)",
+  "best_params": {
+    "max_depth": 20,
+    "n_estimators": 200
+  },
+  "e4_cv_f1": 0.9982,
+  "random_seed": 42,
+  "model_path": "models\\model.joblib",
+  "model_size_mb": 3.58,
+  "e2_dropped_features": [
+    "num_root",
+    "num_outbound_cmds",
+    "srv_serror_rate",
+    "srv_rerror_rate",
+    "dst_host_serror_rate",
+    "dst_host_srv_serror_rate",
+    "dst_host_rerror_rate",
+    "dst_host_srv_rerror_rate"
+  ],
+  "e2_kept_feature_count": 33,
+  "validation_metrics": [
+    {
+      "id": "E1",
+      "model": "LogisticRegression(max_iter=1000)",
+      "features": "All 41 features",
+      "val_accuracy": 0.9719,
+      "val_precision": 0.9764,
+      "val_recall": 0.9629,
+      "val_f1": 0.9696,
+      "val_macro_f1": 0.9717,
+      "val_false_alarm_rate": 0.0203,
+      "val_roc_auc": 0.9964
+    },
+    {
+      "id": "E2",
+      "model": "LogisticRegression(max_iter=1000)",
+      "features": "Pruned 33 features (drop constant & |r|>0.90)",
+      "val_accuracy": 0.9699,
+      "val_precision": 0.9746,
+      "val_recall": 0.9604,
+      "val_f1": 0.9674,
+      "val_macro_f1": 0.9697,
+      "val_false_alarm_rate": 0.0218,
+      "val_roc_auc": 0.996
+    },
+    {
+      "id": "E3",
+      "model": "RandomForestClassifier(n_estimators=100)",
+      "features": "All 41 features",
+      "val_accuracy": 0.999,
+      "val_precision": 0.9995,
+      "val_recall": 0.9983,
+      "val_f1": 0.9989,
+      "val_macro_f1": 0.999,
+      "val_false_alarm_rate": 0.0004,
+      "val_roc_auc": 1.0
+    },
+    {
+      "id": "E4",
+      "model": "RandomForest GridSearchCV (max_depth=20, n_estimators=200)",
+      "features": "All 41 features",
+      "val_accuracy": 0.999,
+      "val_precision": 0.9995,
+      "val_recall": 0.9983,
+      "val_f1": 0.9989,
+      "val_macro_f1": 0.999,
+      "val_false_alarm_rate": 0.0004,
+      "val_roc_auc": 1.0
+    }
+  ],
+  "test_metrics": [
+    {
+      "id": "E1",
+      "model": "LogisticRegression(max_iter=1000)",
+      "test_accuracy": 0.754,
+      "test_precision": 0.9172,
+      "test_recall": 0.6242,
+      "test_f1": 0.7428,
+      "test_macro_f1": 0.7535,
+      "test_false_alarm_rate": 0.0745,
+      "test_roc_auc": 0.7975,
+      "tn": 8988,
+      "fp": 723,
+      "fn": 4823,
+      "tp": 8010
+    },
+    {
+      "id": "E4",
+      "model": "RandomForest GridSearchCV (max_depth=20, n_estimators=200)",
+      "test_accuracy": 0.7628,
+      "test_precision": 0.9672,
+      "test_recall": 0.6038,
+      "test_f1": 0.7435,
+      "test_macro_f1": 0.7615,
+      "test_false_alarm_rate": 0.0271,
+      "test_roc_auc": 0.9652,
+      "tn": 9448,
+      "fp": 263,
+      "fn": 5084,
+      "tp": 7749
+    }
+  ],
+  "success_criteria": {
+    "target_test_attack_recall": 0.8,
+    "achieved_test_attack_recall": 0.6038,
+    "recall_criterion_met": false,
+    "target_macro_f1_gain": 0.02,
+    "achieved_val_macro_f1_gain": 0.0272,
+    "achieved_test_macro_f1_gain": 0.0079,
+    "val_macro_f1_criterion_met": true,
+    "test_macro_f1_criterion_met": false
+  }
+}

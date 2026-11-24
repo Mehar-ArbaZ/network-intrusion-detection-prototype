@@ -1,0 +1,4 @@
+group,records,correct,missed,rate
+Normal,9711,9448,263,0.9729
+Seen Attacks (in KDDTrain+),9083,6984,2099,0.7689
+Unseen Attacks (KDDTest+ only),3750,765,2985,0.204

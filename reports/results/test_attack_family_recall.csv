@@ -1,0 +1,6 @@
+attack_family,records,correct,flagged_as_attack,detection_or_specificity_rate
+Normal,9711,9448,263,0.9729
+DoS,7460,5800,5800,0.7775
+Probe,2421,1771,1771,0.7315
+R2L,2885,168,168,0.0582
+U2R,67,10,10,0.1493
